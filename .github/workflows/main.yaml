@@ -1,4 +1,4 @@
-name: 🚀 Deploy Website on Tag release
+name: 🚀 Deploy Website and Release WebSite
 on:
   push:
     tags:
