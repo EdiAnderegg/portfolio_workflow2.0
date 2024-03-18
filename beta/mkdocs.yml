@@ -1,0 +1,39 @@
+site_name: Beta Seite von eduard
+site_url: http://gbs.niederer.swiss/dta23/eduard/beta
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - palette.
+    - toc.follow
+
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+font:
+  text: Roboto
+  code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc
+
+nav:
+  - Home: index.md
+  - Details: details.md
+copyright: "Version: beta-${BUILD_VERSION}"
