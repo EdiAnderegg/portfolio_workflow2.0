@@ -12,14 +12,12 @@ theme:
 
   palette:
     - scheme: default
-      primary: deep purple
-      accent: deep orange
+      primary: deep orange
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
-      accent: amber
+      primary: deep orange
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
