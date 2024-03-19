@@ -4,6 +4,7 @@ on:
     tags:
       - "release/*"
       - "beta/*"
+      - "standard/*"
 
 jobs:
   set-tag:
