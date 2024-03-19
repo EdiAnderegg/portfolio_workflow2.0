@@ -28,6 +28,7 @@ jobs:
       - name: Read Tag
         id: read_tag
         run: |
+          VALUE=$(cat tag.txt)
           if [ "$VALUE" = "standard" ]; then
             TAG=
           else
