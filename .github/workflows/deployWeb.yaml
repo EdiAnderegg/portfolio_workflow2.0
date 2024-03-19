@@ -31,7 +31,7 @@ jobs:
           if [ "$VALUE" = "standard" ]; then
             TAG=
           else
-            echo "TAG=$(cat tag.txt)/" >> $GITHUB_OUTPUT
+            echo "TAG=$./(cat tag.txt)/" >> $GITHUB_OUTPUT
           fi
 
       - name: 📂 Sync files
@@ -41,6 +41,6 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
-          server-dir: "./${{steps.read_tag.outputs.TAG}}"
+          server-dir: "${{steps.read_tag.outputs.TAG}}"
           port: 21
           protocol: ftp
